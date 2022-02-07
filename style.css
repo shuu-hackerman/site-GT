@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+     padding: 0;
+     margin: 0;
+}
+
+
+header {
+    padding-top: 100px;
+}
+
+#logofirst {
+    background-image: url(images/logo-topo.png);
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+nav {
+    text-align: center;
+    background-color: #078DE8;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+
+}
+
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+nav a:hover{
+
+    color:#0A3180;
+    display: inline-block;
+    background-color: white;
+    width: 300px;
+    height: 100px;
+}
+
+nav p{
+
+    margin: 30px;
+    font-weight: 800;
+    font-size: 1.8em;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    align-items: center;    
+}
+
+nav p:hover{
+    
+    font-weight: 800;
+    font-size: 1.8em;
+    font-family: 'Poppins', sans-serif;
+    color: #0A3180;
+    align-items: center;    
+}
+
+section {
+    background-color:blueviolet;
+    width: 100%;
+    height: 730px;
+    margin: auto;
+    border-width: 1px 0px;
+    border-style: solid;
+    
+    
+}
