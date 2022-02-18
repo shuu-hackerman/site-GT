@@ -1,22 +1,65 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;700;800;900&display=swap');
 
 * {
      padding: 0;
      margin: 0;
 }
 
+body {
+    text-align: center;
+}
+
+strong {
+    font-weight: 900;
+}
+
+
+::-webkit-scrollbar {
+        width: 5px;
+    }    
+
+::-webkit-scrollbar-track {
+        background: #d69811;
+        border-radius: 5px;
+    }
+::-webkit-scrollbar-thumb {
+        background: #003fbe;
+        border-radius: 5px;
+    }
+      
+
+::-webkit-scrollbar-thumb:hover {
+        background: #00065a;
+    }
+
+
+html {
+    scroll-behavior: smooth;
+  }
 
 header {
     padding-top: 100px;
+    border-bottom: 2px solid black;
+    height: 860px;
+    background-image: url(images/bgs/bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 #logofirst {
     background-image: url(images/logo-topo.png);
-    width: 300px;
-    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 750px;
+    height: 860px;
     margin: auto;
+
 }
 
 nav {
@@ -29,56 +72,146 @@ nav {
 }
 
 nav a{
+    
     text-decoration: none;
     display: inline-block;
     text-align: center;    
 }
 
 nav a:hover{
-    
+    display:inline-block;
     color:#0A3180;
     background-color: white;
     width: 300px;
     height: 100px;
+    border-radius: 3px;
 }
 
 
 nav p{
 
     margin: 30px;
-    font-weight: 800;
-    font-size: 20pt;
-    font-family: 'Public Sans', sans-serif;
-    font-weight: 700;
+    font-weight: 900;
+    font-size: 35pt;
+    font-family: 'Inconsolata', monospace;   
     color: white;
     align-items: center;    
+    
 }
 
 nav p:hover{
-    size
-    font-weight: 600;
-    font-size: 2em;
-    font-family: 'Public Sans', sans-serif;
+    font-weight: 900;
+    font-size: 35pt;
+    font-family: 'Inconsolata', monospace;
     color: #0A3180;
-    align-items: center;    
+    align-items: center;
+    
+    
+}
+
+.icons {
+    background-image: url(images/bg-icons.png);
+    background-color: white;
+    padding: 0;
+    height: 100px;
+}
+
+.thumb {    
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    padding-right: 15px;  
+    background-repeat: no-repeat;     
+}
+
+.lista-servicos{
+    color: #0A3180;
+}
+
+.lista-servicos li {
+    font-size: 25px;
+}
+
+#servicos a {   
+    font-family: 'Inconsolata', monospace; 
+    margin: auto;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: none;
+    text-align: center;
 }
 
 section {
+    
+    background-image: url(images/bricks.png);
     background-color: #FFB614;
     width: 100%;
-    height: 730px;
+    height: 720px;
     margin: auto;
-    border-width: 1px 0px;
-    border-style: solid;
+    padding-top: 100px;
+    
 }
 
 div > p {
-    color: #0740B3;
-    width: 700px;
+    background-color: #ffffff3f;
+    color: #0A3180;
+    width: 850px;
     margin: auto;
-    padding-top: 150px;
-    font-family: 'Public Sans', sans-serif;
-    font-size: 30pt;
-    font-weight: 900;
-    letter-spacing: 6px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 32pt;
+    font-weight: 700;    
+    text-align:center;   
 }
+
+div > h1 {
+    text-align: center;
+    color: #0A3180;
+    width: 850px;
+    margin: auto;
+    padding-top: 15px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 45pt;
+    font-weight: 800;
+    
+}
+
+footer {
+    background-color: #0A3180;
+    height: 30px;
+}
+.botao {    
+    background-image: linear-gradient(135deg, #FFB614, #FF7408);
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #000000;
+    display: block;
+    height: 50px;
+    font-size: 1.4em;
+    font-weight: 600;
+    padding: 4px;    
+    text-decoration: none;
+    width: 7em;
+    z-index: 2;
+  }
+  
+  .botao:hover {
+    color: #fff;
+  }
+  
+  .botao .botaospan {
+    align-items: center;
+    background: #ffe8b7;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background 0.5s ease;
+    width: 100%;
+  }
+  
+  .botao:hover .botaospan {
+    background: transparent;
+  }
